@@ -1,0 +1,22 @@
+body
+{
+    background-color: #ffffff;
+}
+.navbar{
+    background-color: #000080;
+    color: #ffffff;
+}
+.navbar-toggle
+{
+    background-color: #ffffff;
+}
+.navbar-toggle .icon-bar
+{
+    background-color: #000080;
+}
+.slider
+{
+    min-height: 350px;
+    width: 100%;
+    background-color: red;
+}
