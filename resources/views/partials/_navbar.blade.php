@@ -9,16 +9,16 @@
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                 </button>
-                <!-- Branding Image -->
-                <a class="navbar-brand" href="{{ url('/') }}">
-                    {{ config('app.name', 'Sath') }}
-                </a>
+                {{--<!-- Branding Image -->--}}
+                {{--<a class="navbar-brand" href="{{ url('/') }}">--}}
+                    {{--{{ config('app.name', 'Sath') }}--}}
+                {{--</a>--}}
             </div>
 
             <!-- Collect the nav links, forms, and other content for toggling -->
             <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
                 <ul class="nav navbar-nav">
-                    <li class="active"><a href="#">Link</a></li>
+                    <li class="active"><a href="#"><i class="fa fa-home" aria-hidden="true"></i></a></li>
                     <li><a href="#">Link</a></li>
                     <li><a href="#">Link</a></li>
                 </ul>
@@ -26,8 +26,8 @@
                 <ul class="nav navbar-nav navbar-right">
                     <!-- Authentication Links -->
                     @if (Auth::guest())
-                        <li><a href="{{ route('register') }}">Register</a></li>
-                        <li><a href="{{ route('login') }}">Login</a></li>
+                        <li><a href="{{ route('register') }}"><i class="fa fa-bar-chart auth-icon" aria-hidden="true"></i>Register</a></li>
+                        <li><a href="{{ route('login') }}"><i class="fa fa-user-o auth-icon" aria-hidden="true"></i>Login</a></li>
                     @else
                         <li class="dropdown">
                             <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">
@@ -54,3 +54,4 @@
         </div>
     </div><!-- /.container-fluid -->
 </nav>
+
